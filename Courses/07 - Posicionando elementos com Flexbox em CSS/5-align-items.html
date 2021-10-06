@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - align-items</title>
+  <style>
+    .flex-container {
+      display: flex;
+      max-width: 350px;
+      border: 1px solid #ccc;
+    }
+    .flex-item {
+      background-color: blueviolet;
+      margin: 5px;
+      color: white;
+      text-align: center;
+      flex: 1
+    }
+    
+    .center {
+      align-items: center;
+    }
+    .stretch {
+      align-items: stretch;
+    }
+    .start {
+      align-items: flex-start;
+    }
+    .end {
+      align-items: flex-end;
+    }
+    .baseline {
+      align-items: baseline;
+    }
+    .column {
+      flex-direction: column;
+    }
+    .central {
+      height: 300px;
+      justify-content: center;
+    }
+    .central .item {
+      flex: 0;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>row</h1>
+  <h2>center</h2>
+  <section class="flex-container center">
+    <div class="flex-item">Texto 1</div>
+    <div class="flex-item">Texto 2</div>
+    <div class="flex-item">Texto 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+  </section>
+
+  <h2>stretch</h2>
+  <section class="flex-container stretch">
+    <div class="flex-item">Texto 1</div>
+    <div class="flex-item">Texto 2</div>
+    <div class="flex-item">Texto 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+  </section>
+
+  <h2>flex-start</h2>
+  <section class="flex-container start">
+    <div class="flex-item">Texto 1</div>
+    <div class="flex-item">Texto 2</div>
+    <div class="flex-item">Texto 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+  </section>
+
+  <h2>flex-end</h2>
+  <section class="flex-container end">
+    <div class="flex-item">Texto 1</div>
+    <div class="flex-item">Texto 2 Lorem ipsum dolor sit amet</div>
+    <div class="flex-item">Texto 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+  </section>
+
+  <h2>baseline</h2>
+  <section class="flex-container baseline">
+    <div class="flex-item">Texto 1</div>
+    <div class="flex-item">Texto 2 Lorem ipsum dolor sit amet</div>
+    <div class="flex-item">Texto 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+  </section>
+
+  <h1>column</h1>
+  <h2>center</h2>
+  <section class="flex-container center column">
+    <div class="flex-item">Texto 1</div>
+    <div class="flex-item">Texto 2</div>
+    <div class="flex-item">Texto 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+  </section>
+
+  <h2>stretch</h2>
+  <section class="flex-container stretch column">
+    <div class="flex-item">Texto 1</div>
+    <div class="flex-item">Texto 2</div>
+    <div class="flex-item">Texto 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+  </section>
+
+  <h2>flex-start</h2>
+  <section class="flex-container start column">
+    <div class="flex-item">Texto 1</div>
+    <div class="flex-item">Texto 2</div>
+    <div class="flex-item">Texto 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+  </section>
+
+  <h2>flex-end</h2>
+  <section class="flex-container end column">
+    <div class="flex-item">Texto 1</div>
+    <div class="flex-item">Texto 2 Lorem ipsum dolor sit amet</div>
+    <div class="flex-item">Texto 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+  </section>
+
+  <h2>baseline</h2>
+  <section class="flex-container baseline column">
+    <div class="flex-item">Texto 1</div>
+    <div class="flex-item">Texto 2 Lorem ipsum dolor sit amet</div>
+    <div class="flex-item">Texto 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+  </section>
+  <h2>alinhamento central à tela</h2>
+  <section class="flex-container center central">
+    <div class="flex-item item">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eveniet ratione explicabo voluptates.
+    </div>
+  </section>
+</body>
+</html>
