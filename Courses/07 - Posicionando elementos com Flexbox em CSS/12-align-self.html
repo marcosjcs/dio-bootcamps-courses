@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - align-self</title>
+  <style>
+    .flex-container {
+      max-width: 350px;
+      display: flex;
+      border: 1px solid #ccc;
+    }
+    .flex-item {
+      background-color: brown;
+      margin: 5px;
+      padding: 10px;      
+      text-align: center;
+      color: white;
+      flex: 1;
+    }
+    .start {
+      align-self: flex-start;
+    }
+    .center {
+      align-self: center;
+    }
+    .end {
+      align-self: flex-end;
+    }
+    .stretch {
+      align-self: stretch;
+    }
+    .baseline {
+      align-self: baseline;
+    }
+    .auto {
+      align-self: auto;
+    }
+  </style>
+</head>
+<body>
+  <h2>align-self</h2>
+  <section class="flex-container">
+    <div class="flex-item">ABBBBBBBBBB</div>
+    <div class="flex-item">BBB</div>
+    <div class="flex-item">C</div>
+    <div class="flex-item">DEF</div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - flex</title>
+  <style>
+    .flex-container {
+      max-width: 400px;
+      display: flex;
+      border: 1px solid #ccc;
+    }
+    .flex-item {
+      background-color: brown;
+      margin: 5px;
+      padding: 10px;      
+      text-align: center;
+      color: white;
+    }
+    .flex-1 {
+      flex: 1;
+      /* flex-grow: 1;
+         flex-shrink: 1
+         flex-basis: 0;
+      */
+    }
+    .largura {
+      width: 200px;
+      /* min-width: 250px; */
+    }
+    .flex-2 {
+      flex: 2;
+      /* flex-grow: 2;
+         flex-shrink: 1
+         flex-basis: 0;
+      */
+    }
+  </style>
+</head>
+<body>
+  <h2>flex 1</h2>
+  <div class="flex-container">
+    <div class="flex-item flex-1">A</div>
+    <div class="flex-item flex-1">BBB</div>
+    <div class="flex-item flex-1">C</div>
+    <div class="flex-item flex-1">DEF</div>
+  </div>
+
+  <h2>flex mix</h2>
+  <div class="flex-container">
+    <div class="flex-item flex-1">A</div>
+    <div class="flex-item flex-2">BBB</div>
+    <div class="flex-item flex-1">C</div>
+    <div class="flex-item flex-2">DEF</div>
+  </div>
+
+  <h2>flex width ignore - basis 0</h2>
+  <div class="flex-container">
+    <div class="flex-item largura flex-2">A</div>
+    <div class="flex-item largura flex-2">BBB</div>
+    <div class="flex-item largura flex-2">C</div>
+    <div class="flex-item largura flex-2">DEF</div>
+  </div>
+</body>
+</html>

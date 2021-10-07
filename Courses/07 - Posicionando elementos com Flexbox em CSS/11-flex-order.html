@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - order</title>
+  <style>
+    .flex-container {
+      max-width: 350px;
+      display: flex;
+      border: 1px solid #ccc;
+    }
+    .flex-item {
+      flex: 1;
+      background-color: brown;
+      margin: 5px;
+      padding: 10px;      
+      text-align: center;
+      color: white;
+    }
+    .fo-0 {
+      order: 0;
+    }
+    .fo-1 {
+      order: 1;
+    }
+    .fo-2 {
+      order: 2;
+    }
+    .fo-3 {
+      order: 3;
+    }
+  </style>
+</head>
+<body>
+  <h2>order 0</h2>
+  <div class="flex-container">
+    <div class="flex-item fo-0">A</div>
+    <div class="flex-item fo-0">BBB</div>
+    <div class="flex-item fo-0">C</div>
+    <div class="flex-item fo-0">DEF</div>
+  </div>
+  <h2>order inversa</h2>
+  <div class="flex-container">
+    <div class="flex-item fo-3">A</div>
+    <div class="flex-item fo-2">BBB</div>
+    <div class="flex-item fo-1">C</div>
+    <div class="flex-item fo-0">DEF</div>
+  </div>
+
+</body>
+</html>
