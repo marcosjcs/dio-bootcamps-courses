@@ -23,6 +23,10 @@ header .container {
   justify-content: space-between;
 }
 
+header .logoImg {
+  max-width: 168px;
+  margin-top: 15px;
+}
 header .logo {
   margin-left: 5px;
   color: var(--vermelho);
@@ -44,8 +48,7 @@ header nav a:hover {
 .filme-principal {
   font-size: 16px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url("../img/capa-house.jpg");
-
+  url("../img/capa-house.jpg");
   height: 400px;
   background-size: cover;
 
@@ -102,6 +105,9 @@ header nav a:hover {
   width: 100%;
   display: block;
   cursor: pointer;
+}
+.owl-theme .item:hover {
+  transform: scale(1.15);
 }
 
 .carrosel-filmes {
